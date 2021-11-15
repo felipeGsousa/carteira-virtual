@@ -1,0 +1,50 @@
+<mat-card class="mat-card-cadastro">
+  <mat-card-header></mat-card-header>
+  <mat-card-content>
+    <div class="form-1" *ngIf="form1">
+      <mat-form-field appearance="fill" class="cpf">
+        <mat-label>CPF</mat-label>
+        <input matInput placeholder="Ex.: 000.000.000-00" required>
+      </mat-form-field>
+    </div>
+    <div class="form-2" *ngIf="form2">
+      <mat-form-field appearance="fill">
+        <mat-label>Nome completo</mat-label>
+        <input matInput placeholder="Nome" required>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Telefone</mat-label>
+        <input matInput placeholder="Ex.:00 0 0000-0000" required>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Senha</mat-label>
+        <input matInput placeholder="Senha" type="password">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Confirmar senha</mat-label>
+        <input matInput placeholder="Senha" type="password">
+      </mat-form-field>
+    </div>
+
+    <div class="form-3" *ngIf="form3">
+      <mat-form-field appearance="fill">
+        <mat-label>Bairro</mat-label>
+        <input matInput placeholder="Bairro" required>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Cidade</mat-label>
+        <input matInput placeholder="Cidade" required>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Estado</mat-label>
+        <input matInput placeholder="Estado" required>
+      </mat-form-field>
+    </div>
+
+  </mat-card-content>
+  <mat-card-footer>
+    <button mat-raised-button class="prosseguir" *ngIf="prosseguir" (click)="prosseguirFunc()">Prosseguir<mat-icon>keyboard_arrow_right</mat-icon></button>
+    <button mat-raised-button class="retornar" *ngIf="retornar" (click)="retornarFunc()">Retornar<mat-icon>keyboard_arrow_left</mat-icon></button>
+    <button mat-raised-button class="cadastrar" *ngIf="cadastrar">Cadastrar<mat-icon>checked</mat-icon></button>
+  </mat-card-footer>
+</mat-card>
