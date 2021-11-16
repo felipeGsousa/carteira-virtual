@@ -55,4 +55,7 @@ export class CadastroComponent implements OnInit {
       this.cadastrar = false;
     }
   }
+
+
+
 }

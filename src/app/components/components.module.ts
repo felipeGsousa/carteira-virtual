@@ -6,6 +6,7 @@ import {MatInputModule} from "@angular/material/input";
 import {MatIconModule} from "@angular/material/icon";
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
+import {NgxMaskModule} from "ngx-mask";
 
 
 
@@ -17,13 +18,14 @@ import {MatButtonModule} from "@angular/material/button";
   exports: [
     CadastroComponent
   ],
-  imports: [
-    CommonModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatIconModule,
-    MatCardModule,
-    MatButtonModule,
-  ]
+    imports: [
+        CommonModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatIconModule,
+        MatCardModule,
+        MatButtonModule,
+        NgxMaskModule,
+    ]
 })
 export class ComponentsModule { }

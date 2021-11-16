@@ -1,9 +1,11 @@
 .mat-card-cadastro{
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 300px;
   height: 360px;
   border-radius: 30px;
+  float: right;
+  margin-right: 5em;
 }
 
 .form-1, .form-2, .form-3{
@@ -16,7 +18,7 @@
 }
 
 mat-form-field{
-  width: 99%;
+  width: 120%;
 }
 
 mat-card-footer{

@@ -4,7 +4,7 @@
     <div class="form-1" *ngIf="form1">
       <mat-form-field appearance="fill" class="cpf">
         <mat-label>CPF</mat-label>
-        <input matInput placeholder="Ex.: 000.000.000-00" required>
+        <input matInput type="text" mask="000.000.000-00" placeholder="Ex.: 000.000.000-00" required>
       </mat-form-field>
     </div>
     <div class="form-2" *ngIf="form2">
@@ -14,7 +14,7 @@
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Telefone</mat-label>
-        <input matInput placeholder="Ex.:00 0 0000-0000" required>
+        <input matInput type="text" mask="(00) 0 0000-0000" placeholder="Ex.:(00) 0 0000-0000" required>
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Senha</mat-label>
@@ -28,16 +28,16 @@
 
     <div class="form-3" *ngIf="form3">
       <mat-form-field appearance="fill">
-        <mat-label>Bairro</mat-label>
-        <input matInput placeholder="Bairro" required>
+        <mat-label>Estado</mat-label>
+        <input matInput placeholder="Estado" required>
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Cidade</mat-label>
         <input matInput placeholder="Cidade" required>
       </mat-form-field>
       <mat-form-field appearance="fill">
-        <mat-label>Estado</mat-label>
-        <input matInput placeholder="Estado" required>
+        <mat-label>Bairro</mat-label>
+        <input matInput placeholder="Bairro" required>
       </mat-form-field>
     </div>
 
